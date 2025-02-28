@@ -44,7 +44,7 @@ const IntroSection = () => {
           {[
             { figure: "1000+", label: "Zufriedene Kunden" },
             { figure: "15+", label: "Jahre Erfahrung" },
-            { figure: "500+", label: "Geprüfte Fahrzeuge" },
+            { figure: "50+", label: "Geprüfte Fahrzeuge" },
             { figure: "100%", label: "Kundenorientiert" },
           ].map((stat, index) => (
             <div 

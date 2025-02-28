@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Vertrauensauto</h3>
+            <h3 className="text-xl font-bold mb-4">MIVAL</h3>
             <p className="text-muted-foreground mb-6">
               Ihr vertrauenswürdiger Partner im Gebrauchtwagenhandel mit erstklassigem Service und transparenter Abwicklung.
             </p>
@@ -44,15 +44,15 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin size={18} className="mr-2 mt-1 flex-shrink-0 text-primary" />
-                <span className="text-muted-foreground">Musterstraße 12, 12345 Musterstadt</span>
+                <span className="text-muted-foreground">Wappersdorfer Str. 59, 92360 Mühlhausen</span>
               </li>
               <li className="flex items-center">
                 <Phone size={18} className="mr-2 flex-shrink-0 text-primary" />
-                <a href="tel:+4900012345" className="text-muted-foreground hover:text-primary transition-colors">+49 000 123456</a>
+                <a href="tel:+4900012345" className="text-muted-foreground hover:text-primary transition-colors">+49 176 23509453</a>
               </li>
               <li className="flex items-center">
                 <Mail size={18} className="mr-2 flex-shrink-0 text-primary" />
-                <a href="mailto:kontakt@gebr_autoexperte.de" className="text-muted-foreground hover:text-primary transition-colors">kontakt@gebr_autoexperte.de</a>
+                <a href="mailto:kontakt@gebr_autoexperte.de" className="text-muted-foreground hover:text-primary transition-colors">kontakt@mival.de</a>
               </li>
             </ul>
           </div>
@@ -79,7 +79,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="border-t border-border mt-12 pt-8 text-center text-muted-foreground">
-          <p>© {new Date().getFullYear()} Vertrauensauto. Alle Rechte vorbehalten.</p>
+          <p>© {new Date().getFullYear()} MIVAL. Alle Rechte vorbehalten.</p>
           <p className="mt-2">
             <a href="#legal" className="hover:text-primary transition-colors">Impressum</a> | 
             <a href="#legal" className="hover:text-primary transition-colors ml-3">Datenschutz</a>

@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 
 const PartnersSection = () => {
@@ -22,11 +21,11 @@ const PartnersSection = () => {
   }, []);
 
   const partners = [
-    { name: "Partner 1", id: 1 },
-    { name: "Partner 2", id: 2 },
-    { name: "Partner 3", id: 3 },
-    { name: "Partner 4", id: 4 },
-    { name: "Partner 5", id: 5 },
+    { name: "Bank11", id: 1, img: "src/img/Bank11.jpeg" },
+    { name: "intec", id: 2, img: "src/img/intec.png" },
+    { name: "partner", id: 3, img: "src/img/partner.png" },
+    { name: "Schirmbeck", id: 4, img: "src/img/Schirmbeck.png" },
+    { name: "Stahlgruber", id: 5, img: "src/img/Stahlgruber.png" },
   ];
 
   return (
@@ -44,16 +43,18 @@ const PartnersSection = () => {
           </p>
         </div>
 
-        {/* Partner logos - Using placeholder gradient backgrounds */}
+        {/* Partner logos - Bilder werden hier eingebunden */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
           {partners.map((partner, index) => (
             <div
               key={partner.id}
               className={`aspect-[3/2] rounded-lg bg-secondary p-6 flex items-center justify-center hover-card reveal-animation delay-${index % 4 + 1}`}
             >
-              <div className="w-full h-full bg-gradient-to-br from-primary/5 to-primary/10 rounded flex items-center justify-center">
-                <span className="text-primary/40 font-medium">{partner.name}</span>
-              </div>
+              <img
+                src={partner.img}
+                alt={partner.name}
+                className="object-contain max-h-full"
+              />
             </div>
           ))}
         </div>
@@ -62,8 +63,8 @@ const PartnersSection = () => {
         <div className="mt-20 grid md:grid-cols-3 gap-8">
           {[
             {
-              title: "Qualitätssicherung",
-              description: "Durch unsere Partnerschaften garantieren wir höchste Standards bei allen Dienstleistungen."
+              title: "Finanzierung",
+              description: "Wir können Ihnen ein individuelles Finanzierungsangebot für Ihr Wunschfahrzeug erstellen."
             },
             {
               title: "Expertise",

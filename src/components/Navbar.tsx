@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -9,7 +8,7 @@ const navItems = [
   { name: "Kundenstimmen", href: "#testimonials" },
   { name: "Über uns", href: "#about" },
   { name: "Kontakt", href: "#contact" },
-  { name: "Impressum & Datenschutz", href: "#legal" },
+  { name: "Impressum & Datenschutz", href: "https://mival.de/impressum/" },
 ];
 
 const Navbar = () => {
@@ -39,7 +38,9 @@ const Navbar = () => {
     >
       <div className="container-custom flex items-center justify-between">
         <a href="#home" className="flex items-center">
-          <span className="text-xl font-heading font-bold text-primary">Vertrauensauto</span>
+          <h1 className="text-4xl md:text-5xl font-extrabold uppercase tracking-wide bg-gradient-to-r from-blue-500 to-yellow-400 bg-clip-text text-transparent">
+            MIVAL
+          </h1>
         </a>
 
         {/* Desktop Navigation */}
