@@ -1,5 +1,5 @@
 
-import { Car, CreditCard, Truck, Tool, ArrowRight, RefreshCw, Diamond } from "lucide-react";
+import { Car, CreditCard, Truck, Wrench, ArrowRight, RefreshCw, Diamond } from "lucide-react";
 import { useEffect } from "react";
 
 const services = [
@@ -19,7 +19,7 @@ const services = [
     description: "Erhalten Sie individuelle Finanzierungs- oder Leasingangebote, die exakt auf Ihre Bedürfnisse zugeschnitten sind – ohne versteckte Kosten."
   },
   {
-    icon: <Tool className="h-8 w-8" />,
+    icon: <Wrench className="h-8 w-8" />,
     title: "Service & Wartung",
     description: "Vertrauen Sie auf unseren umfassenden Wartungs- und Reparaturservice. Unser qualifiziertes Fachpersonal sorgt für eine kontinuierliche Betreuung Ihres Fahrzeugs."
   },
