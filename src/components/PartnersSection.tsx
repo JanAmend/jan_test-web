@@ -21,6 +21,14 @@ const PartnersSection = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const partners = [
+    { name: "Partner 1", id: 1 },
+    { name: "Partner 2", id: 2 },
+    { name: "Partner 3", id: 3 },
+    { name: "Partner 4", id: 4 },
+    { name: "Partner 5", id: 5 },
+  ];
+
   return (
     <section id="partners" className="section bg-background">
       <div className="container-custom">
@@ -37,14 +45,14 @@ const PartnersSection = () => {
         </div>
 
         {/* Partner logos - Using placeholder gradient backgrounds */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-          {[...Array(8)].map((_, index) => (
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+          {partners.map((partner, index) => (
             <div
-              key={index}
+              key={partner.id}
               className={`aspect-[3/2] rounded-lg bg-secondary p-6 flex items-center justify-center hover-card reveal-animation delay-${index % 4 + 1}`}
             >
               <div className="w-full h-full bg-gradient-to-br from-primary/5 to-primary/10 rounded flex items-center justify-center">
-                <span className="text-primary/40 font-medium">Partner {index + 1}</span>
+                <span className="text-primary/40 font-medium">{partner.name}</span>
               </div>
             </div>
           ))}

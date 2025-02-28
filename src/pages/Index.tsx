@@ -6,6 +6,7 @@ import PartnersSection from "@/components/PartnersSection";
 import IntroSection from "@/components/IntroSection";
 import Footer from "@/components/Footer";
 import AudarisWidget from "@/components/AudarisWidget";
+import GoogleRatings from "@/components/GoogleRatings";
 
 const Index = () => {
   return (
@@ -16,6 +17,7 @@ const Index = () => {
         <IntroSection />
         <AudarisWidget />
         <ServicesSection />
+        <GoogleRatings />
         <PartnersSection />
         {/* Add other sections like Testimonials and About Us when they are created */}
         
