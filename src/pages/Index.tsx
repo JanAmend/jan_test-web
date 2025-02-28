@@ -5,6 +5,7 @@ import ServicesSection from "@/components/ServicesSection";
 import PartnersSection from "@/components/PartnersSection";
 import IntroSection from "@/components/IntroSection";
 import Footer from "@/components/Footer";
+import AudarisWidget from "@/components/AudarisWidget";
 
 const Index = () => {
   return (
@@ -13,6 +14,7 @@ const Index = () => {
       <main className="flex-grow">
         <Hero />
         <IntroSection />
+        <AudarisWidget />
         <ServicesSection />
         <PartnersSection />
         {/* Add other sections like Testimonials and About Us when they are created */}
