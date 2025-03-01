@@ -1,4 +1,3 @@
-
 import { Car, CreditCard, Truck, Wrench, ArrowRight, RefreshCw, Diamond } from "lucide-react";
 import { useEffect } from "react";
 
@@ -51,7 +50,7 @@ const ServicesSection = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Check on initial load
+    handleScroll(); // Überprüfe den Sichtbarkeitsstatus bereits beim Laden
     
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -59,7 +58,7 @@ const ServicesSection = () => {
   return (
     <section id="services" className="section bg-secondary">
       <div className="container-custom">
-        {/* Section header */}
+        {/* Abschnitts-Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="px-3 py-1 text-xs md:text-sm font-medium rounded-full bg-primary/10 text-primary inline-block mb-4 reveal-animation">
             Umfassender Service
@@ -94,7 +93,21 @@ const ServicesSection = () => {
           ))}
         </div>
 
-        {/* Advantages */}
+        {/* Bilderbereich mit gleicher Höhe */}
+        <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-6 reveal-animation">
+          <img 
+            src="src/img/Schlüsselübergabe.jpeg" 
+            alt="Schlüsselübergabe" 
+            className="rounded-xl shadow-lg object-cover h-64 w-full"
+          />
+          <img 
+            src="src/img/Transport.jpeg" 
+            alt="Transport" 
+            className="rounded-xl shadow-lg object-cover h-64 w-full"
+          />
+        </div>
+
+        {/* Unsere Vorteile */}
         <div className="mt-20 bg-primary/5 rounded-xl p-8 lg:p-12 reveal-animation">
           <h3 className="text-2xl font-bold mb-6 text-center">Unsere Vorteile</h3>
           <ul className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
